@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+
+    <!--KenBurnsView的src必须放在mipmap那里，不然会占用超多内存和CPU-->
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/iv_my_wc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@mipmap/splash_bg" />
+    <pype.mingming.bibiteacher.ui.BiAnimView
+        android:id="@+id/animl_bi_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/skip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:text="跳过"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/app_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bibi工作室"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        />
+</RelativeLayout>

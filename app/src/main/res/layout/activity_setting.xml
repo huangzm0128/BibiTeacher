@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:myTop="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <pype.mingming.bibiteacher.myhomepage.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/myTopBar"
+        myTop:leftText="返回"
+        myTop:leftTextColor="@android:color/background_light"
+        myTop:titleColor="@android:color/background_light"
+        myTop:userTopBarTitle="设置"
+        myTop:titleSize="8dp"
+        >
+    </pype.mingming.bibiteacher.myhomepage.TopBar>
+
+    <ScrollView
+        android:id="@+id/fl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@android:id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="16dp"
+                android:text="@string/person_setting"
+                android:textColor="@color/accent"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/linear_network"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_item_selector"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:minHeight="?android:listPreferredItemHeight"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@android:id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:text="@string/_2g_3g_no_upload_picture"
+                        android:textColor="@color/night"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@android:id/summary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@android:id/title"
+                        android:text="@string/start_to_save_traffic"
+                        android:textColor="@color/gary2"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@android:id/widget_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:orientation="vertical">
+
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/sb_2G_3G"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <include layout="@layout/dividing_line"/>
+
+
+            <LinearLayout
+                android:id="@+id/linear_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:minHeight="?android:listPreferredItemHeight"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@android:id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:text="@string/allow_receive_push_message"
+                        android:textColor="@color/night"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@android:id/widget_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:orientation="vertical">
+
+
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/sb_pull_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <include layout="@layout/dividing_line"/>
+
+            <LinearLayout
+                android:id="@+id/invite_friends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:background="@drawable/menu_item_selector"
+                android:minHeight="?android:listPreferredItemHeight"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@android:id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:text="@string/invite_friends"
+                        android:textColor="@color/night"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <include layout="@layout/dividing_line"/>
+
+            <TextView
+                android:id="@android:id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="@string/help"
+                android:textColor="@color/accent"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/linear_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_item_selector"
+                android:gravity="center_vertical"
+                android:minHeight="?android:listPreferredItemHeight"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@android:id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:text="@string/about"
+                    android:textColor="@color/night"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <include layout="@layout/dividing_line"/>
+
+            <LinearLayout
+                android:id="@+id/checkUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@drawable/menu_item_selector"
+                android:minHeight="?android:listPreferredItemHeight"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@android:id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:text="检查更新"
+                    android:textColor="@color/night"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <include layout="@layout/dividing_line"/>
+
+            <TextView
+                android:id="@android:id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="@string/thanks"
+                android:textColor="@color/accent"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/linear_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="?android:listPreferredItemHeight"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@android:id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:text="@string/author"
+                    android:textColor="@color/night"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

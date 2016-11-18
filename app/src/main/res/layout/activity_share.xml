@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <pype.mingming.bibiteacher.myhomepage.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/myTopBar"
+        app:leftText="返回"
+        app:leftTextColor="@android:color/background_light"
+        app:rightTextColor="@android:color/background_light"
+        app:titleColor="@android:color/background_light"
+        app:userTopBarTitle="分享"
+        app:titleSize="8dp"
+        >
+    </pype.mingming.bibiteacher.myhomepage.TopBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.8dp"
+                android:layout_weight="2"
+                android:background="@color/silverGray"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="推荐给好友"
+                android:textSize="18sp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.8dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:background="@color/silverGray" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+            <LinearLayout
+                android:id="@+id/share_weixin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/menu_item_selector"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/weixin_btn"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="微信好友"
+                    android:textColor="@color/night"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/share_weixin_friends"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/menu_item_selector"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/weixin_friends_btn"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="朋友圈"
+                    android:textColor="@color/night"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/share_qq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/menu_item_selector"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/qq_btn"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:layout_gravity="center"
+                    android:text="QQ"
+                    android:textColor="@color/night"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

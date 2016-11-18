@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <pype.mingming.bibiteacher.myhomepage.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/sendpost_topBar"
+        app:leftText="返回"
+        app:leftTextColor="@android:color/background_light"
+        app:rightTextColor="@android:color/background_light"
+        app:titleColor="@android:color/background_light"
+        app:userTopBarTitle="发布"
+        app:titleSize="8dp"
+        >
+    </pype.mingming.bibiteacher.myhomepage.TopBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/sendpost_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="标题"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/subject"
+                    />
+
+                <Spinner
+                    android:id="@+id/subject_spinner"
+                    style="@style/spinner_style"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp">
+                </Spinner>
+
+                <Spinner
+                    android:id="@+id/grade_spinner"
+                    style="@style/spinner_style"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp">
+                </Spinner>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_top_shadow_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/time"
+                    />
+
+                <TextView
+                    android:id="@+id/sendpost_stime"
+                    android:layout_height="wrap_content"
+                    android:text="开始时间"
+                    android:layout_width="100dp"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="30dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="18dp"
+                    android:text=" 至 "
+                    />
+
+                <TextView
+                    android:id="@+id/sendpost_etime"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="结束时间"
+                    android:textSize="18dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_top_shadow_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/price"
+                    />
+
+                <EditText
+                    android:id="@+id/sendpost_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:hint="薪酬"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 元/天"
+                    android:textSize="18dp"
+                    />
+
+                <TextView
+                    android:id="@+id/sendpost_price_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="现金支付"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="18dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_top_shadow_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/location"
+                    />
+
+                <TextView
+                    android:id="@+id/sendpost_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请选择家教地点"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="30dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_top_shadow_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/context"
+                    />
+
+                <EditText
+                    android:id="@+id/sendpost_context"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="家教描述，要求，待遇等"
+                    android:layout_marginLeft="26dp"
+                    android:maxLength="100"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_top_shadow_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/iphone"
+                    />
+
+                <EditText
+                    android:id="@+id/sendpost_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="联系电话"
+                    android:layout_marginLeft="27dp"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_top_shadow_line" />
+
+            <Button
+                android:id="@+id/sendpost_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/btnuser_ripple"
+                android:text="确认发布"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

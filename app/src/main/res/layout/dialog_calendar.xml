@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical"
+    android:padding="10sp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dialog_calender_month"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/dialog_calender_year"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="bottom"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/dialog_calender_left"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/dialog_onclick" >
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:src="@mipmap/ic_gray_left" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/dialog_calender_right"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/dialog_onclick" >
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:background="@drawable/dialog_onclick"
+                    android:src="@mipmap/ic_gray_right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <pype.mingming.bibiteacher.ui.MCalendarView
+        android:id="@+id/dialog_calender_calender"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_calender_esc"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/dialog_calender_enter"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_onclick"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="确定"
+            android:textColor="@color/accent" />
+    </LinearLayout>
+
+</LinearLayout>

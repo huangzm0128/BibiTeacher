@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <pype.mingming.bibiteacher.ui.VerticalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/index_person_list1"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"/>
+                <include layout="@layout/index_person_list2"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+            </LinearLayout>
+        </pype.mingming.bibiteacher.ui.VerticalScrollView>
+    </FrameLayout>
+
+</LinearLayout>

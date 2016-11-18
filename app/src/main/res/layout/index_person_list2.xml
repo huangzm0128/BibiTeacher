@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/index_person_curriculum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_item_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_index_person_curriculum"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="我的课表"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="NEW"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/point_index_person"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/index_person_text_right" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/index_person_custom_teacher_line"
+        android:layout_marginLeft="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/silverGray" />
+    <LinearLayout
+        android:id="@+id/index_person_custom_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_item_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_index_person_custom_teacher"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="我的定制老师"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="NEW"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/point_index_person"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/index_person_text_right" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/index_person_student_line"
+        android:layout_marginLeft="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/silverGray"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/index_person_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_item_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_index_person_student"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="我的辅导学生"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="NEW"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/point_index_person"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/index_person_text_right" />
+    </LinearLayout>
+
+    <include layout="@layout/dividing_line"/>
+    <LinearLayout
+        android:id="@+id/index_person_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_item_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_index_person_messag"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="待回复"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="NEW"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/point_index_person"/>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/index_person_text_right" />
+    </LinearLayout>
+
+    <include layout="@layout/dividing_line"/>
+
+    <LinearLayout
+        android:id="@+id/index_person_nearby_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_item_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_index_person_nearby_recommend"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="附近推荐"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="NEW"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/point_index_person"/>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/index_person_text_right" />
+    </LinearLayout>
+
+
+    <include layout="@layout/dividing_line"/>
+    <LinearLayout
+        android:id="@+id/index_person_recent_browse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_item_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_index_person_google"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="最近浏览"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="NEW"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/point_index_person"/>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/index_person_text_right" />
+    </LinearLayout>
+
+    <include layout="@layout/dividing_line"/>
+
+
+    <LinearLayout
+        android:id="@+id/index_person_invite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_item_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_index_person_share"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="分享"
+            android:textSize="@dimen/default_text_size" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="分享给好友"/>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/index_person_text_right" />
+    </LinearLayout>
+
+    <include layout="@layout/dividing_line"/>
+
+    <LinearLayout
+        android:id="@+id/index_person_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_item_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_index_person_setting"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="设置"
+            android:textSize="@dimen/default_text_size" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/index_person_text_right" />
+    </LinearLayout>
+</LinearLayout>

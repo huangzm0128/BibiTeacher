@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0000000"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        >
+        <HorizontalScrollView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/linear_imagewall"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <ImageView
+                    android:id="@+id/bottom_img1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/girl1"
+                    android:scaleType="fitXY"
+                    />
+                <ImageView
+                    android:id="@+id/bottom_img2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/girl2"
+                    android:scaleType="fitXY"
+                    />
+                <ImageView
+                    android:id="@+id/bottom_img3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/beij2"
+                    android:scaleType="fitXY"
+                    />
+                <ImageView
+                    android:id="@+id/bottom_imgUpload"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/image_add"
+                    android:scaleType="fitStart"
+                    />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rt_userNum"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/relatvelayout_backgroud">
+
+            <ImageView
+                android:id="@+id/imgUserNum"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/usenum" />
+
+            <LinearLayout
+                android:layout_toRightOf="@id/imgUserNum"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv1"
+                    android:textColor="#ffffff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="用户手机号:"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:textColor="#ffffff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv1"
+                    android:layout_marginLeft="20dp"
+                    android:text="木有填"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="50dp"
+                android:src="@drawable/right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rt_write"
+            android:background="@drawable/relatvelayout_backgroud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/imgWrite"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/write" />
+
+            <LinearLayout
+                android:layout_toRightOf="@id/imgWrite"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#ffffff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="个性签名:"
+                    android:textSize="15sp"
+                    android:id="@+id/textView" />
+                <TextView
+                    android:id="@+id/tvWrite"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:text="啥都没填"
+                    android:textSize="18sp"
+                    android:focusable ="true"
+                    android:focusableInTouchMode ="true"
+                    android:marqueeRepeatLimit ="marquee_forever"
+                    android:ellipsize ="marquee"
+                    android:singleLine ="true"  />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="50dp"
+                android:src="@drawable/right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rt_num"
+            android:background="@drawable/relatvelayout_backgroud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imgNum"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/num" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/imgNum"
+                android:text="发帖数："
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tvNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:textColor="#ffffff"
+                android:layout_toRightOf="@id/tv2"
+                android:text="0"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="50dp"
+                android:src="@drawable/right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"  />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rt_address"
+            android:background="@drawable/relatvelayout_backgroud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imgAddress"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/address" />
+            <LinearLayout
+                android:layout_toRightOf="@id/imgAddress"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:text="现居地址:"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:text="广东省番禺职业技术学院"
+                    android:textSize="17sp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="50dp"
+                android:src="@drawable/right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="注销当前账号"
+                android:textSize="18sp"
+                android:background="@drawable/btn_login"
+                android:textColor="@android:color/holo_red_light"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

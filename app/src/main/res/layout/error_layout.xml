@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/error_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/error_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="服务走丢了，点击刷新"
+        android:textColor="#3cb371"
+        />
+
+    <ImageView
+        android:id="@+id/error_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@mipmap/error"
+        android:layout_above="@+id/error_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp" />
+
+</RelativeLayout>

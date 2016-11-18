@@ -1,0 +1,33 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing_image">10dp</dimen>
+    <dimen name="nav_header_height">180dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Bottom tab -->
+    <dimen name="default_tab_view_text_size">12dp</dimen>
+    <dimen name="default_tab_view_padding">4dp</dimen>
+    <dimen name="default_tab_view_indicator_size">12dp</dimen>
+
+    <!-- 卡片：点赞、分享、留言字体大小 -->
+    <dimen name="information_card_dzfxly_size">13dp</dimen>
+
+
+
+    <!--first_start sliding page  -->
+    <dimen name="first_start_images_size">360.0dip</dimen>
+    <dimen name="first_start_images_margin_top">0.0dip</dimen>
+    <dimen name="first_start_heading_margin_bottom">12.0dip</dimen>
+    <dimen name="first_start_text_margin">48.0dip</dimen>
+    <dimen name="first_start_heading">24.0sp</dimen>
+    <dimen name="first_start_text_margin_bottom">12.0dip</dimen>
+    <dimen name="first_start_content_min_height">96.0dip</dimen>
+    <dimen name="first_start_content">15.0sp</dimen>
+
+
+    <dimen name="default_text_size">16sp</dimen>
+</resources>

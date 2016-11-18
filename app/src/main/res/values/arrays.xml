@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_bottom_normal_icon">
+        <item>@mipmap/bottom_tab_home_gray</item>
+        <item>@mipmap/bottom_tab_teacher_gray</item>
+        <item>@mipmap/bottom_tab_person_gray</item>
+    </string-array>
+
+    <string-array name="main_bottom_selected_icon">
+        <item>@mipmap/bottom_tab_home</item>
+        <item>@mipmap/bottom_tab_teacher</item>
+        <item>@mipmap/bottom_tab_person</item>
+    </string-array>
+</resources>

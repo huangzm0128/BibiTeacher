@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <pype.mingming.bibiteacher.myhomepage.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/mypost_topBar"
+        app:leftText="返回"
+        app:leftTextColor="@android:color/background_light"
+        app:rightTextColor="@android:color/background_light"
+        app:titleColor="@android:color/background_light"
+        app:userTopBarTitle="我的招募"
+        app:titleSize="8dp"
+        >
+    </pype.mingming.bibiteacher.myhomepage.TopBar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mypost_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

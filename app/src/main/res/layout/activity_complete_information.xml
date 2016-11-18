@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <pype.mingming.bibiteacher.myhomepage.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/myTopBar"
+        app:leftText="返回"
+        app:leftTextColor="@android:color/background_light"
+        app:rightTextColor="@android:color/background_light"
+        app:titleColor="@android:color/background_light"
+        app:userTopBarTitle="完善资料"
+        app:titleSize="8dp"
+        >
+    </pype.mingming.bibiteacher.myhomepage.TopBar>
+
+    <LinearLayout
+        android:id="@+id/complete_label_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请选择用户类型:"
+            android:textSize="18sp"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/accent"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_parents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_select_user_bg"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100dp"
+                android:text="家长"
+                android:textSize="18sp"
+                android:textColor="@color/default_tab_view_selected_color"/>
+
+            <TextView
+                android:id="@+id/user_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_other_login_bg"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="大学生"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/complete_label_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+
+        <EditText
+            android:id="@+id/complete_user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:hint="手机号码" />
+
+    </android.support.design.widget.TextInputLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/complete_label_realName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+
+        <EditText
+            android:id="@+id/complete_user_realName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxLength="11"
+            android:hint="真实姓名" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <pype.mingming.bibiteacher.ui.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:duration="200"
+        app:alpha="200"
+        app:scale="1.2"
+        app:color="#FFD306">
+
+        <Button
+            android:id="@+id/complete_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:alpha="0.3"
+            android:background="@drawable/button_background"
+            android:enabled="false"
+            android:text="确定"
+            android:textColor="@android:color/white" />
+    </pype.mingming.bibiteacher.ui.MaterialButton>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:myTop="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <pype.mingming.bibiteacher.myhomepage.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/myTopBar"
+        myTop:leftText="返回"
+        myTop:leftTextColor="@android:color/background_light"
+        myTop:titleColor="@android:color/background_light"
+        myTop:userTopBarTitle="订单"
+        myTop:titleSize="8dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/order_item_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <include layout="@layout/error_layout"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

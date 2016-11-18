@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home_black_36dp"
+            android:title="首页"/>
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@mipmap/ic_message_black_36dp"
+            android:title="消息"/>
+        <item
+            android:id="@+id/nav_post"
+            android:icon="@mipmap/ic_local_post_office_black_36dp"
+            android:title="帖子"/>
+        <item
+            android:id="@+id/nav_order_from"
+            android:icon="@mipmap/ic_assignment_black_36dp"
+            android:title="应聘"/>
+        <item
+            android:id="@+id/nav_person"
+            android:icon="@mipmap/ic_account_box_black_36dp"
+            android:title="个人"/>
+    </group>
+
+    <item android:title="设置">
+        <menu>
+            <item
+                android:id="@+id/nav_theme"
+                android:icon="@mipmap/ic_brightness_7_black_36dp"
+                android:title="夜间"/>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@mipmap/ic_settings_applications_black_36dp"
+                android:title="设置"/>
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@mipmap/ic_exit_to_app_black_36dp"
+                android:title="退出"/>
+
+        </menu>
+    </item>
+
+</menu>

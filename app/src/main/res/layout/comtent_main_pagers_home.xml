@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/home_sfl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <pype.mingming.bibiteacher.ui.MyScrollview
+                android:id="@+id/myScroll"
+                android:layout_width="match_parent"
+                android:scrollbarStyle="insideInset"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ListView
+                        android:id="@+id/head_pagers_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dividerHeight="0px"
+                        android:divider="#00000000"
+                        android:background="@color/white">
+
+                    </ListView>
+
+                    <include layout="@layout/index_home_list1" />
+
+                    <include layout="@layout/dividing_line"/>
+
+                    <LinearLayout
+                        android:id="@+id/xuanfu_navbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/post_all_1"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="全部"
+                            android:background="@drawable/changecolor"/>
+                        <ImageView
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/holo_blue_dark"/>
+                        <TextView
+                            android:id="@+id/post_near_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="附近"
+                            android:layout_weight="1"
+                            android:background="@drawable/changecolor"/>
+                        <ImageView
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/holo_blue_dark"/>
+                        <TextView
+                            android:id="@+id/post_price_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:text="价格"
+                            android:background="@drawable/changecolor"/>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/teach_home_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        />
+                </LinearLayout>
+
+            </pype.mingming.bibiteacher.ui.MyScrollview>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/dingbu_navbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:background="#ffffff"
+            android:padding="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/post_all_2"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="全部"
+                android:background="@drawable/changecolor"/>
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_blue_dark"/>
+            <TextView
+                android:id="@+id/post_near_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="附近"
+                android:layout_weight="1"
+                android:background="@drawable/changecolor"/>
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_blue_dark"/>
+            <TextView
+                android:id="@+id/post_price_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="价格"
+                android:background="@drawable/changecolor"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

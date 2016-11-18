@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <pype.mingming.bibiteacher.myhomepage.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/choose_teach_topBar"
+        app:leftText="返回"
+        app:leftTextColor="@android:color/background_light"
+        app:rightTextColor="@android:color/background_light"
+        app:titleColor="@android:color/background_light"
+        app:userTopBarTitle="招募快照"
+        app:titleSize="8dp"
+        >
+    </pype.mingming.bibiteacher.myhomepage.TopBar>
+
+    <RelativeLayout
+        android:id="@+id/mysnap_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/choose_teach_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="标题"
+                        android:textColor="#000000"
+                        />
+
+                    <TextView
+                        android:id="@+id/choose_teach_priceNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff0000"
+                        android:text="20.0"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/choose_teach_title"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元/天"
+                        android:textSize="10dp"
+                        android:layout_above="@+id/choose_teach_time"
+                        android:layout_toEndOf="@+id/choose_teach_priceNum" />
+
+                    <TextView
+                        android:id="@+id/choose_teach_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="刚刚 发布"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/choose_teach_priceNum"
+                        android:layout_alignParentStart="true" />
+
+                    <ImageView
+                        android:id="@+id/choose_teach_icon"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/choose_teach_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="Android小先生"
+                        android:textSize="18dp"
+                        android:layout_below="@+id/choose_teach_icon"
+                        android:layout_alignEnd="@+id/choose_teach_icon" />
+
+                    <TextView
+                        android:id="@+id/choose_teach_read"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="599次 浏览"
+                        android:layout_marginStart="20dp"
+                        android:layout_alignBaseline="@+id/choose_teach_time"
+                        android:layout_alignBottom="@+id/choose_teach_time"
+                        android:layout_toEndOf="@+id/choose_teach_time" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:background="#f0f0f0" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/choose_teach_subject_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="科目："
+                        />
+
+                    <TextView
+                        android:id="@+id/choose_teach_subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="物理"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/choose_teach_subject_title" />
+
+                    <TextView
+                        android:id="@+id/choose_teach_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一年级"
+                        android:layout_alignTop="@+id/choose_teach_grade_title"
+                        android:layout_alignStart="@+id/choose_teach_subject" />
+
+                    <TextView
+                        android:id="@+id/choose_teach_grade_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="年级："
+                        android:layout_below="@+id/choose_teach_subject_title"
+                        android:layout_toStartOf="@+id/choose_teach_subject" />
+
+                    <TextView
+                        android:id="@+id/choose_teach_stime_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="时间："
+                        android:layout_below="@+id/choose_teach_grade_title"
+                        android:layout_toStartOf="@+id/choose_teach_subject" />
+
+                    <TextView
+                        android:id="@+id/choose_teach_stime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10/10 15:30 - 10/10 18:30"
+                        android:layout_alignTop="@+id/choose_teach_stime_title"
+                        android:layout_alignStart="@+id/choose_teach_subject"/>
+
+                    <TextView
+                        android:id="@+id/choose_teach_price_way_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="薪酬结算："
+                        android:layout_below="@+id/choose_teach_stime_title"
+                        />
+
+                    <TextView
+                        android:id="@+id/choose_teach_price_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="现结"
+                        android:textColor="#ff0000"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/choose_teach_price_way_title" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#f0f0f0" />
+
+                <RelativeLayout
+                    android:id="@+id/choose_teach_address_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/choose_teach_address_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="详细地址："
+                        android:maxEms="10"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/choose_teach_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="广州市番禺区沙湾镇..."
+                        android:maxEms="10"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/choose_teach_address_title" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@mipmap/location"
+                        android:layout_marginEnd="31dp"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#f0f0f0" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/choose_teach_context_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="家教描述："
+                        />
+
+                    <TextView
+                        android:id="@+id/choose_teach_context"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="悬崖上一只小老鼠挥舞着短短的前爪，一次又一次跳下去，努力学习飞翔，旁边母蝙蝠看着它摔的头破血流，忧心的说：它爹，要不告诉它，它不是咱亲生的！"
+                        android:layout_toEndOf="@+id/choose_teach_context_title"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#f0f0f0" />
+
+                <RelativeLayout
+                    android:id="@+id/choose_teach_baoming_table_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/choose_teach_baoming_table"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/right"
+                        android:layout_alignParentEnd="true" />
+
+                    <TextView
+                        android:id="@+id/choose_teach_baoming_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/choose_teach_baoming_table"
+                        android:text="0人已报名"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:background="#f0f0f0" />
+
+                <TextView
+                    android:id="@+id/choose_teach_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="暂无报名.."
+                    android:gravity="center_horizontal"
+                    />
+
+                <pype.mingming.bibiteacher.ui.S_ListView
+                    android:id="@+id/choose_teach_list"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </pype.mingming.bibiteacher.ui.S_ListView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <include layout="@layout/progress_dialog"/>
+    <include layout="@layout/error_layout"/>
+
+</LinearLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:myTop="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <pype.mingming.bibiteacher.myhomepage.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/myTopBar"
+        myTop:leftText="返回"
+        myTop:leftTextColor="@android:color/background_light"
+        myTop:titleColor="@android:color/background_light"
+        myTop:userTopBarTitle="订单详情"
+        myTop:titleSize="8dp"
+        >
+    </pype.mingming.bibiteacher.myhomepage.TopBar>
+
+    <pype.mingming.bibiteacher.ui.VerticalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交易成功"
+                    android:textColor="@color/silverGray"/>
+                <TextView
+                    android:id="@+id/order_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="30dp"
+                    android:paddingLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/night"
+                    android:textSize="70sp"/>
+
+                <LinearLayout
+                    android:paddingTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <pype.mingming.bibiteacher.ui.CircleImageView
+                        android:id="@+id/order_userIcon"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@mipmap/default_user_avatar"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="vertical">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:id="@+id/order_userName"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="0dp"
+                            android:text=""
+                            android:textSize="18sp"
+                            android:layout_marginStart="20dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/silverGray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="对方账户"
+                        android:textSize="18sp"
+                        android:textColor="@color/gary2"/>
+                    <TextView
+                        android:id="@+id/order_otherUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/silverGray"
+                        android:text=""/>
+                </LinearLayout>
+                <include layout="@layout/dividing_line"/>
+
+                <LinearLayout
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话"
+                        android:textSize="18sp"
+                        android:textColor="@color/gary2"/>
+                    <TextView
+                        android:id="@+id/order_otherUserPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/silverGray"
+                        android:text=""/>
+                </LinearLayout>
+                <include layout="@layout/dividing_line"/>
+
+                <LinearLayout
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="家教地点"
+                        android:textSize="18sp"
+                        android:textColor="@color/gary2"/>
+                    <TextView
+                        android:id="@+id/order_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/silverGray"
+                        android:text=""/>
+                </LinearLayout>
+                <include layout="@layout/dividing_line"/>
+
+                <LinearLayout
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="家教时间"
+                        android:textSize="18sp"
+                        android:textColor="@color/gary2"/>
+                    <TextView
+                        android:id="@+id/order_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/silverGray"
+                        android:text=""/>
+                </LinearLayout>
+                <include layout="@layout/dividing_line"/>
+                <LinearLayout
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="家教科目"
+                        android:textSize="18sp"
+                        android:textColor="@color/gary2"/>
+                    <TextView
+                        android:id="@+id/order_subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/silverGray"
+                        android:text=""/>
+                </LinearLayout>
+                <include layout="@layout/dividing_line"/>
+                <LinearLayout
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="家教年级"
+                        android:textSize="18sp"
+                        android:textColor="@color/gary2"/>
+                    <TextView
+                        android:id="@+id/order_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/silverGray"
+                        android:text=""/>
+                </LinearLayout>
+                <include layout="@layout/dividing_line"/>
+
+                <LinearLayout
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="订单创建时间"
+                        android:textSize="18sp"
+                        android:textColor="@color/gary2"/>
+                    <TextView
+                        android:id="@+id/order_create_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/silverGray"
+                        android:text=""/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </pype.mingming.bibiteacher.ui.VerticalScrollView>
+
+
+</LinearLayout>

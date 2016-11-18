@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/teach_type_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:src="@mipmap/bottom_tab_home_gray"
+        android:layout_gravity="center_vertical"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/teach_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    android:maxLength="10"
+                    />
+
+                <TextView
+                    android:id="@+id/teach_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="时间"
+                    android:textSize="11dp"
+                    />
+
+                <TextView
+                    android:id="@+id/teach_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地点"
+                    android:textSize="11dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/teach_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥15.0/天"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:gravity="top"
+                android:textSize="12dp"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_top_shadow_line" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Bibi家教</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="welcom_head_01">怎么找一个大学生家教？</string>
+    <string name="welcom_content_01">到家教机构找太贵了？可以选择的大学生家教太少了？</string>
+    <string name="welcom_head_02">Bibi家教，一对一的家教</string>
+    <string name="welcom_content_02">私人诚心为你的孩子定制学习计划，快速有效提高学习成绩</string>
+    <string name="welcom_head_03">家教流程</string>
+    <string name="welcom_content_03">家长可以发家教帖子，或者直接选择家教。
+        大学生可以发个人简历让家长们挑选，或者在家教帖子中报名，留言咨询</string>
+    <string name="welcom_head_04">名校大学生任意挑选</string>
+    <string name="person_setting">个性化设置</string>
+    <string name="_2g_3g_no_upload_picture">2G/3G 网络不下载图片</string>
+    <string name="start_to_save_traffic">开启后节省流量</string>
+    <string name="allow_receive_push_message">是否接收推送消息</string>
+    <string name="invite_friends">邀请好友使用BibiTeacher家教平台</string>
+    <string name="help">帮助</string>
+    <string name="about">关于</string>\
+    <string name="thanks">感谢有你</string>
+    <string name="author">作者:Bibi工作室</string>
+    <string name="index_person_list1_login">点击登录</string>
+
+    <string-array name="subject">
+        <item>语文</item>
+        <item>数学</item>
+        <item>英语</item>
+        <item>政治</item>
+        <item>历史</item>
+    </string-array>
+
+</resources>
